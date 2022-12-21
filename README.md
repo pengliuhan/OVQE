@@ -1,8 +1,8 @@
 # *OVQE: Omniscient Network for Compressed Video Quality Enhancement*
 
 
-The *PyTorch* implementation for the OVQE: Omniscient Network for Compressed
-Video Quality Enhancement which is accepted by [IEEE TBC].
+The *PyTorch* implementation for the [OVQE: Omniscient Network for Compressed
+Video Quality Enhancement](https://ieeexplore.ieee.org/document/9908169) which is accepted by [IEEE TBC].
 
 Task: Video Quality Enhancement / Video Artifact Reduction.
 
