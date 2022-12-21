@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from ops.dcc.modulated_deform_conv import ModulatedDeformConv
+from ops.dcn.deform_conv import ModulatedDeformConv
 import functools
 from base_model import OFAE, SKU_Net
 import numpy as np
