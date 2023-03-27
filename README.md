@@ -20,28 +20,11 @@ python -m pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 -f https://dow
 python -m pip install tqdm lmdb pyyaml opencv-python scikit-image thop
 ```
 
-### 1.2. DCNv2
-
-Build DCNv2
-
-```bash
-cd ops/dcn/
-bash build.sh
-```
-
-Check if DCNv2 works (optional)
-
-```bash
-python simple_check.py
-```
-
-> The DCNv2 source files here is different from the [open-sourced version](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) due to incompatibility. [[issue]](https://github.com/open-mmlab/mmediting/issues/84#issuecomment-644974315)
-
-### 1.3. Dataset
+### 1.2. Dataset
 
 Please check [here](https://github.com/ryanxingql/mfqev2.0/wiki/MFQEv2-Dataset).
 
-### 1.4. Create LMDB
+### 1.3. Create LMDB
 We now generate LMDB to speed up IO during training.
 ```bash
 python create_lmdb_ovqe.py
