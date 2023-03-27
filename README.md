@@ -11,12 +11,12 @@ Task: Video Quality Enhancement / Video Artifact Reduction.
 ## 1. Pre-request
 
 ### 1.1. Environment
-Suppose that you have installed CUDA 10.1, then:
+Suppose that you have installed CUDA 11.0, then:
 ```bash
-conda create -n cvlab python=3.7 -y  
+conda create -n cvlab python=3.8 -y  
 conda activate cvlab
 git clone --depth=1 https://github.com/pengliuhan/OVQE && cd OVQE/
-python -m pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+python -m pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 python -m pip install tqdm lmdb pyyaml opencv-python scikit-image thop
 ```
 
