@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from ops.dcn.deform_conv import ModulatedDeformConv
+from torchvision.ops import DeformConv2d
 import functools
 from base_model import OFAE, SKU_Net
 import numpy as np
@@ -44,8 +44,8 @@ class STFF(nn.Module):
             nf, in_nc * 3 * self.size_dk, base_ks, padding=base_ks // 2
         )
 
-        self.deform_conv = ModulatedDeformConv(
-            in_nc, out_nc, deform_ks, padding=deform_ks // 2, deformable_groups=in_nc
+        self.deform_conv = DeformConv2d(
+            in_nc, out_nc, deform_ks, padding=deform_ks // 2
         )
 
     def forward(self, inputs):
